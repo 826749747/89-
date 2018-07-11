@@ -1,0 +1,19 @@
+PROGRAM E09;
+VAR A,B,C;
+BEGIN
+  READ(A);
+  ++A;
+  WRITE(A);
+  --A;
+  WRITE(A);
+  READ(B);
+  B++;
+  WRITE(B);
+  B--;
+  WRITE(B);
+  C:=A++;
+  WRITE(C);
+  C := ++A + B++;
+  WRITE(C);
+  
+END.

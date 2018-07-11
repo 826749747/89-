@@ -1,0 +1,11 @@
+PROGRAM E08;
+VAR A,B,C;
+BEGIN
+	A:=20;
+	FOR B:=A STEP 10 UNTIL A+100
+	DO
+		BEGIN
+		   READ(C);
+		   WRITE(C*B);
+		END
+END.

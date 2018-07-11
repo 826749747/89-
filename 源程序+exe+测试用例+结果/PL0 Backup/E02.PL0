@@ -1,0 +1,17 @@
+PROGRAM E02;
+VAR B;
+BEGIN
+  READ(B);
+  IF B>0 THEN
+    BEGIN 
+      WRITE(1);
+    END
+  ELSE IF B<0 THEN
+    BEGIN
+      WRITE(-1);
+    END
+  ELSE
+    BEGIN
+      WRITE(0);
+    END
+END.

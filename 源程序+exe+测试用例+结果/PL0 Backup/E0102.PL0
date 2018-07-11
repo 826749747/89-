@@ -1,0 +1,8 @@
+PROGRAM EX01;
+VAR A,B;
+BEGIN
+  READ(A);
+  B:=22;
+  IF A<>B THEN
+  WRITE(A);
+END.

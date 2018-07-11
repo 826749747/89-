@@ -1,0 +1,16 @@
+PROGRAM E02;
+VAR A,B;
+BEGIN
+  READ(B);
+  IF B!=10 THEN
+    BEGIN
+      A:=5; 
+      WRITE(A);
+    END
+	
+  ELSE 
+    BEGIN
+      A:=6;
+      WRITE(A);
+    END
+END.

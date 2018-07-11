@@ -1,0 +1,16 @@
+PROGRAM EX01044;
+VAR A,B,C;
+BEGIN
+ 	ELSE  
+ 	FOR
+	STEP
+	UNTIL
+	RETURN
+	&
+	||
+	!
+ 	*=
+ 	/=
+ 	<>
+ 	!=
+END.

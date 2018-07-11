@@ -1,0 +1,94 @@
+=== COMPILE PL0 ===
+  0 PROGRAM E09; 
+  0 VAR A,B,C; 
+  1 BEGIN 
+  2   READ(A); 
+  4   ++A; 
+  8   WRITE(A); 
+ 11   --A; 
+ 15   WRITE(A); 
+ 18   READ(B); 
+ 20   B++; 
+ 24   WRITE(B); 
+ 27   B--; 
+ 31   WRITE(B); 
+ 34   C:=A++; 
+ 42   WRITE(C); 
+ 45   C := ++A + B++; 
+ 59   WRITE(C); 
+ 62    
+ 62 END. 
+  0  JMP   0   1
+  1  INI   0   6
+  2  OPR   0  16
+  3  STO   0   3
+  4  LOD   0   3
+  5  LIT   0   1
+  6  OPR   0   2
+  7  STO   0   3
+  8  LOD   0   3
+  9  OPR   0  14
+ 10  OPR   0  15
+ 11  LOD   0   3
+ 12  LIT   0   1
+ 13  OPR   0   3
+ 14  STO   0   3
+ 15  LOD   0   3
+ 16  OPR   0  14
+ 17  OPR   0  15
+ 18  OPR   0  16
+ 19  STO   0   4
+ 20  LOD   0   4
+ 21  LIT   0   1
+ 22  OPR   0   2
+ 23  STO   0   4
+ 24  LOD   0   4
+ 25  OPR   0  14
+ 26  OPR   0  15
+ 27  LOD   0   4
+ 28  LIT   0   1
+ 29  OPR   0   3
+ 30  STO   0   4
+ 31  LOD   0   4
+ 32  OPR   0  14
+ 33  OPR   0  15
+ 34  LOD   0   3
+ 35  LIT   0   1
+ 36  OPR   0   2
+ 37  STO   0   3
+ 38  LOD   0   3
+ 39  LIT   0   1
+ 40  OPR   0   3
+ 41  STO   0   5
+ 42  LOD   0   5
+ 43  OPR   0  14
+ 44  OPR   0  15
+ 45  LOD   0   3
+ 46  LIT   0   1
+ 47  OPR   0   2
+ 48  STO   0   3
+ 49  LOD   0   3
+ 50  LOD   0   4
+ 51  LIT   0   1
+ 52  OPR   0   2
+ 53  STO   0   4
+ 54  LOD   0   4
+ 55  LIT   0   1
+ 56  OPR   0   3
+ 57  OPR   0   2
+ 58  STO   0   5
+ 59  LOD   0   5
+ 60  OPR   0  14
+ 61  OPR   0  15
+ 62  OPR   0   0
+~~~ RUN PL0 ~~~
+? 10
+11
+10
+? 11
+12
+11
+10
+23
+~~~ END PL0 ~~~
+

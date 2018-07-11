@@ -1,0 +1,48 @@
+=== COMPILE PL0 ===
+  0 PROGRAM E02; 
+  0 VAR B; 
+  1 BEGIN 
+  2   READ(B); 
+  4   IF B>0 THEN 
+  7     BEGIN  
+  8       WRITE(1); 
+ 11     END 
+ 11   ELSE IF B<0 THEN 
+keyword ELSE found 15     BEGIN 
+ 16       WRITE(-1); 
+ 20     END 
+ 20   ELSE 
+keyword ELSE found 20     BEGIN 
+ 21       WRITE(0); 
+ 24     END 
+ 24 END. 
+  0  JMP   0   1
+  1  INI   0   4
+  2  OPR   0  16
+  3  STO   0   3
+  4  LOD   0   3
+  5  LIT   0   0
+  6  OPR   0  12
+  7  JPC   0  12
+  8  LIT   0   1
+  9  OPR   0  14
+ 10  OPR   0  15
+ 11  JMP   0  24
+ 12  LOD   0   3
+ 13  LIT   0   0
+ 14  OPR   0  10
+ 15  JPC   0  21
+ 16  LIT   0   1
+ 17  OPR   0   1
+ 18  OPR   0  14
+ 19  OPR   0  15
+ 20  JMP   0  24
+ 21  LIT   0   0
+ 22  OPR   0  14
+ 23  OPR   0  15
+ 24  OPR   0   0
+~~~ RUN PL0 ~~~
+? 11
+1
+~~~ END PL0 ~~~
+

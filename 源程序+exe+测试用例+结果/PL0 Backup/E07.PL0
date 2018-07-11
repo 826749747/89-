@@ -1,0 +1,12 @@
+PROGRAM E07;
+VAR A,B,C;
+BEGIN
+	A:=2;
+	B:=8;
+	C:=8;
+ 	B/=A;
+	WRITE(B);
+	C*=A;
+	WRITE(C);
+
+END.
